@@ -132,7 +132,7 @@ Pomoću *Dependency Injection* mehanizma uključiti `ActivityRepository` u `JpaA
 
 * U `ActivityRepository` napraviti metodu `List<Activity> findByName(String name)`.
 Anotirati ovu metodu sa JPQL (Java Persistance Query Language)
-upitom `@Query("select a from Activity a where a.name = :name)`.
+upitom `@Query("select a from Activity a where a.name = :name")`.
 Anotirati parametar name sa `@Param("name")`.
 
 * Ukloniti anotaciju `@Query` sa metode `findByName` u `ActivityRepository` i testirati pretraživanje po imenu.
